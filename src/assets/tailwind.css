@@ -3,18 +3,6 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
-  html {
-    @apply h-full;
-  }
-
-  body {
-    @apply m-0 p-0 bg-teal-200;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    @apply m-0;
-  }
-
   .wrapper_content {
     @apply flex flex-col my-0 mx-auto;
   }
@@ -39,7 +27,7 @@
     @apply w-full flex-none relative my-0 mx-auto;
   }
 
-  .logo {
+  .navbar.logo {
     @apply text-2xl;
   }
 
@@ -57,5 +45,17 @@
   
   .navbar_link {
     @apply block text-purple-400;
+  }
+  
+  .navbar_link.router-link-exact-active {
+    @apply text-purple-700;
+  }
+
+  .title {
+    @apply mb-8 text-3xl font-bold text-slate-700;
+  }
+
+  .link {
+    @apply text-indigo-600 cursor-pointer border-solid border-slate-400 rounded-sm;
   }
 }
