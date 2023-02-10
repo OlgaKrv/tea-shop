@@ -1,16 +1,18 @@
 <template>
-  <div id="app" class="project_wrapper">
+  <div id="app" class="wrapper">
     <header>
       <div class="navbar">
         <div class="container">
           <div class="navbar_content">
             <div class="logo">Tea shop</div>
             <ul class="navbar_list">
-              <li class="navbar_item">
-                <a class="navbar_link">Меню</a>
-              </li>
-              <li class="navbar_item">
-                <a class="navbar_link">Контакты</a>
+              <li class="navbar_item" v-for="link in links" :key="link.title">
+                <router-link
+                  class="navbar_link"
+                  :title="link.title"
+                  :to="link.url"
+                  >{{ link.title }}</router-link
+                >
               </li>
             </ul>
           </div>
@@ -26,7 +28,12 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      links: [
+        { title: 'Меню', url: '/' },
+        { title: 'Контакты', url: '/contacts' },
+      ],
+    }
   },
 }
 </script>

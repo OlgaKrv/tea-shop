@@ -3,11 +3,40 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
-  .project_wrapper {
-    @apply flex;
+  html {
+    @apply h-full;
   }
+
+  body {
+    @apply m-0 p-0 bg-teal-200;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply m-0;
+  }
+
+  .wrapper_content {
+    @apply flex flex-col my-0 mx-auto;
+  }
+
+  .wrapper_content {
+    @apply flex flex-col min-h-screen;
+  }
+
+  .wrapper-content--fixed {
+    @apply mt-20;
+  }
+
+  .project_wrapper {
+    @apply flex flex-col min-h-screen my-0 mx-auto;
+  }
+
   .navbar {
-    @apply fixed top-0 inset-x-0 z-50 px-20 py-3 bg-white shadow-md shadow-black;
+    @apply fixed top-0 inset-x-0 z-20 px-5 py-3 bg-white shadow-md shadow-black;
+  }
+
+  .container {
+    @apply w-full flex-none relative my-0 mx-auto;
   }
 
   .logo {
@@ -23,16 +52,10 @@
   }
   
   .navbar_item {
-    @apply mr-32 cursor-pointer;
-    /* &:last-child {
-      margin-right: 0;
-    } */
+    @apply mr-8 cursor-pointer;
   }
   
   .navbar_link {
     @apply block text-purple-400;
-    /* &.active {
-      color: #4343aa;
-    } */
   }
 }
