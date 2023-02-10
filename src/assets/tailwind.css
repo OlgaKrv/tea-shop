@@ -1,3 +1,38 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer components {
+  .project_wrapper {
+    @apply flex;
+  }
+  .navbar {
+    @apply fixed top-0 inset-x-0 z-50 px-20 py-3 bg-white shadow-md shadow-black;
+  }
+
+  .logo {
+    @apply text-2xl;
+  }
+
+  .navbar_content {
+    @apply flex items-center justify-between;
+  }
+  
+  .navbar_list {
+    @apply flex items-center justify-center;
+  }
+  
+  .navbar_item {
+    @apply mr-32 cursor-pointer;
+    /* &:last-child {
+      margin-right: 0;
+    } */
+  }
+  
+  .navbar_link {
+    @apply block text-purple-400;
+    /* &.active {
+      color: #4343aa;
+    } */
+  }
+}
