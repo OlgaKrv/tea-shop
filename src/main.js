@@ -7,6 +7,10 @@ import router from "./router/index.js"
 import store from "./store"
 import './assets/tailwind.css'
 
+// Plugins 
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
+
 Vue.config.productionTip = false
 
 new Vue({

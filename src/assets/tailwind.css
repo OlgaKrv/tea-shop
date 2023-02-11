@@ -52,10 +52,22 @@
   }
 
   .title {
-    @apply mb-8 text-3xl font-bold text-slate-700;
+    @apply mb-8 text-2xl font-bold text-slate-700;
   }
 
   .link {
     @apply text-indigo-600 cursor-pointer border-solid border-slate-400 rounded-sm;
+  }
+
+  .product_wrapper {
+    @apply flex justify-start items-center;
+  }
+
+  .product_slider {
+    @apply max-w-sm text-center;
+  }
+
+  .product_content {
+    @apply max-w-2xl text-center;
   }
 }
