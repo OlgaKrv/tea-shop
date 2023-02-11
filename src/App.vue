@@ -4,7 +4,7 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar_content">
-            <div class="logo">Tea shop</div>
+            <div class="logo">Время чая</div>
             <ul class="navbar_list">
               <li class="navbar_item" v-for="link in links" :key="link.title">
                 <router-link
@@ -31,6 +31,7 @@ export default {
     return {
       links: [
         { title: 'Меню', url: '/' },
+        { title: 'Чаи', url: '/tea-varieties' },
         { title: 'Контакты', url: '/contacts' },
       ],
     }
