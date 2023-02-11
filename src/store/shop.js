@@ -61,9 +61,13 @@ export default {
   },
   mutations: {},
   actions: {},
+  /* eslint-disable */
   getters: {
     shopList(state) {
       return state.shopList
+    },
+    teaSample: (state) => (id) => {
+      return state.shopList.find((teaVariety) => teaVariety.id == id)
     },
   },
 }

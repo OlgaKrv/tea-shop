@@ -1,7 +1,9 @@
 <template>
   <div class="item">
-    <img :src="teaVariety.img" :alt="teaVariety.title" />
-    <p>{{ teaVariety.title }}</p>
+    <img class="w-44" :src="teaVariety.img" :alt="teaVariety.title" />
+    <router-link :to="/tea-varieties/ + teaVariety.id" class="link">{{
+      teaVariety.title
+    }}</router-link>
     <p>{{ teaVariety.description }}</p>
   </div>
 </template>

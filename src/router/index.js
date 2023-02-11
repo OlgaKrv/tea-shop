@@ -31,7 +31,7 @@ export default new Router({
       component: TeaVarieties,
     },
     {
-      path: '/tea-sample',
+      path: '/tea-varieties/:id',
       name: 'TeaSample',
       component: TeaSample,
     },
